@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/home1.css">
+<title>home</title>
+</head>
+<body>
+	<span class="dropdown">
+		<div class="dropdown-content">
+  			<a href="Home.html" target="_self">HOME</a>
+    		<a href="Daily Food.html" target="_self">DAILY FOOD</a>
+    		<a href="Sermon.html" target="_self">SERMON</a>
+    		<a href="Summaries.html" target="_self">SUMMARIES</a>
+			<img src="pictures/logo.png" id="logo">
+  		</div>
+	</span>
+<!--...............................................^MENU.........................................................-->
+	
+	<h1 class="sum">WELCOME HOME</h1>
+
+	<div class="column">
+		<span class="scroll">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+  					<div class="numbertext">1 / 3</div>
+					<img src="pictures/ss1.png" id="imag">
+					<div class="text">11/06/22</div>
+				</div>
+				<div class="mySlides fade">
+  					<div class="numbertext">2 / 3</div>
+					<img src="pictures/ss2.png" id="imag">
+ 					<div class="text">12/06/22</div>
+				</div>
+				<div class="mySlides fade">
+  					<div class="numbertext">3 / 3</div>
+  					<img src="pictures/ss3.jpg" id="imag">
+  					<div class="text">13/06/22</div>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<div id="dot">
+  				<span class="dot" onclick="currentSlide(1)"></span> 
+  				<span class="dot" onclick="currentSlide(2)"></span> 
+  				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			<h4>NEWS</h4>
+		</span>
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			function plusSlides(n) {
+  				showSlides(slideIndex += n);
+			}
+			function currentSlide(n) {
+  				showSlides(slideIndex = n);
+			}
+			function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				var dots = document.getElementsByClassName("dot");
+  				if (n > slides.length) {slideIndex = 1}    
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";  
+  				}
+  				for (i = 0; i < dots.length; i++) {
+      				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+  				slides[slideIndex-1].style.display = "block";  
+  				dots[slideIndex-1].className += " active";
+			}
+		</script>
+<!--........................................................^FIRST PICTURE..................................................-->
+
+		<span class="scroll">
+			<div class="slideshow-container">
+				<div class="mySlidess fade">
+  					<div class="numbertext">1 / 3</div>
+  					<img src="pictures/ss4.png" id="imag">
+  					<div class="text">11/06/22</div>
+				</div>
+				<div class="mySlidess fade">
+  					<div class="numbertext">2 / 3</div>
+  					<img src="pictures/ss5.png" id="imag">
+  					<div class="text">12/06/22</div>
+				</div>
+				<div class="mySlidess fade">
+  					<div class="numbertext">3 / 3</div>
+  					<img src="pictures/ss6.png" id="imag">
+  					<div class="text">13/06/22</div>
+				</div>
+				<a class="prev" onclick="plusSlidess(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlidess(1)">&#10095;</a>
+			</div>
+			<br>
+			<div id="dotss">
+  				<span class="dotss" onclick="currentSlidess(1)"></span> 
+  				<span class="dotss" onclick="currentSlidess(2)"></span> 
+  				<span class="dotss" onclick="currentSlidess(3)"></span> 
+			</div>
+			<h4>SCRIPTURE</h4>
+		</span>
+		<script>
+			var slideIndex = 1;
+			showSlidess(slideIndex);
+			function plusSlidess(n) {
+  				showSlidess(slideIndex += n);
+			}
+			function currentSlidess(n) {
+  				showSlidess(slideIndex = n);
+			}
+			function showSlidess(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlidess");
+  				var dots = document.getElementsByClassName("dotss");
+  				if (n > slides.length) {slideIndex = 1}    
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";  
+  				}
+  				for (i = 0; i < dots.length; i++) {
+      				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+  				slides[slideIndex-1].style.display = "block";  
+  				dots[slideIndex-1].className += " active";
+			}
+		</script>
+<!--....................................................^SECOND PICTURE..................................................-->
+
+		<span class="scroll">
+			<div class="slideshow-container">
+				<div class="mySlidesss fade">
+  					<div class="numbertext">1 / 3</div>
+  					<img src="pictures/ss10.png" id="imag">
+  					<div class="text">11/06/22</div>
+				</div>
+				<div class="mySlidesss fade">
+  					<div class="numbertext">2 / 3</div>
+  					<img src="pictures/ss11.png" id="imag">
+  					<div class="text">12/06/22</div>
+				</div>
+				<div class="mySlidesss fade">
+  					<div class="numbertext">3 / 3</div>
+  					<img src="pictures/ss12.png" id="imag">
+  					<div class="text">13/06/22</div>
+				</div>
+				<a class="prev" onclick="plusSlidesss(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlidesss(1)">&#10095;</a>
+			</div>
+			<br>
+			<div id="dotsss">
+  				<span class="dotsss" onclick="currentSlides(1)"></span> 
+  				<span class="dotsss" onclick="currentSlides(2)"></span> 
+  				<span class="dotsss" onclick="currentSlides(3)"></span> 
+			</div>
+			<h4>OTHERS</h4>
+		</span>
+		<script>
+			var slideIndex = 1;
+			showSlidesss(slideIndex);
+			function plusSlidesss(n) {
+  				showSlidesss(slideIndex += n);
+			}
+			function currentSlides(n) {
+  				showSlidesss(slideIndex = n);
+			}
+			function showSlidesss(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlidesss");
+  				var dots = document.getElementsByClassName("dotsss");
+  				if (n > slides.length) {slideIndex = 1}    
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";  
+  				}
+  				for (i = 0; i < dots.length; i++) {
+      				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+  				slides[slideIndex-1].style.display = "block";  
+  				dots[slideIndex-1].className += " active";
+			}
+		</script>
+<!--..........................................................^THIRD PICTURE....................................................-->
+	</div>
+<!--................................................^ROW PITURES.........................................-->
+
+	<div class="about-section">
+  		<h1>About Us</h1>
+		Are you searching for a place where all your spiritual needs will be met? Are you hungry for the word of God,
+		and are you seeking answers to Biblical mysteries?
+		Look no further, for you are at the right place and at the right time.<br>
+		Stick with WordOnTheGo, as we take you through the things of the HIGHEST,
+		explaining to you the mysteries of the world that is hidden in the manual of the Earth.<br>
+		This website seeks to educate you on the WHAT’S, WHY’S, HOW’S and WHEN’S of the Bible.
+		We’ll also motivate you on daily basis,
+		providing you with general knowledge from around the world, and good music for your soul.<br>
+		DID YOU KNOW, some historians believe Pontius Pilate committed suicide, as punishment from God?
+		DID YOU KNOW, Faith is the persuasion of the mind that a certain statement is true?<br>
+		Anticipate spiritual growth as you read from this Site on daily basis.<br>
+		THANK YOU.<br>
+	</div>
+<!--......................................................^ABOUT SECTION.....................................................-->
+
+	<hr class="solid">
+<!--................................................................^RULER..................................................-->
+	
+	<div class="cont">
+		<h1 style="text-align: center; color: white;">CONTACT US</h1>
+		<div class="row">
+			<div class="med">
+  				<form action="https://www.w3schools.com/action_page.php">
+    				<label for="fname">First Name</label>
+    				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+    				<label for="lname">Last Name</label>
+    				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    				<label for="country">Country</label>
+    				<select id="country" name="country">
+      					<option value="australia">Australia</option>
+      					<option value="canada">Canada</option>
+      					<option value="usa">USA</option>
+    				</select>
+    				<label for="subject">Subject</label>
+    				<textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
+    				<input type="submit" value="Submit">
+  				</form>
+			</div>
+<!--...............................................^FORM..............................................-->
+  			<div class="med">
+  				<p class="social" id="social1">
+    				Mobile;
+    				<a href="0504024366" class="fa fa-mobile">0504024366</a>
+				</p>
+				<p class="social" id="social2">
+    				Whatsapp;
+    				<a href="0551836808" class="fa fa-whatsapp">0551836808</a>
+   				</p>
+   				<p class="social" id="social3">
+    				Follow Us;
+    				<a href="https://www.Facebook.com" class="fa fa-facebook">Facebook</a>
+					<a href="https://www.Twitter.com" class="fa fa-twitter">Twitter</a>
+					<a href="https://www.Instagram.com" class="fa fa-instagram">Instagram</a>
+				</p>
+			</div>
+<!--..........................................^MEDIA HANDLES.........................................................-->
+   		</div>
+	</div>
+<!--.................................................^CONTACT US SECTION.........................................-->
+</body>
+</html>
