@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/dailyfood1.css">
+	  <title>dailyfood</title>
+  </head>
+  <body>
+    <div class="dropdown">
+      <div class="dropdown-content">
+  	    <a href="Home.html" target="_self">HOME</a>
+        <a href="Daily Food.html" target="_self">DAILY FOOD</a>
+        <a href="Sermon.html" target="_self">SERMON</a>
+        <a href="Summaries.html" target="_self">SUMMARIES</a>
+      </div>
+    </div>
+<!--..........................................................^MENU...........................................-->
+    <h1 class="sum">DAILY FOOD</h1>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="pictures/ss7.jpg" >
+        <div class="text">11/06/22</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="pictures/ss8.jpg" >
+        <div class="text">12/06/22</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="pictures/ss9.jpg" >
+        <div class="text">13/06/22</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+<!--...................................................^FIRST PICTURE.................................................-->
+
+    <h1 class="sum">DAILY KNOWLEDGE</h1>
+    <div class="slideshow-container">
+      <div class="mySlidess fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="pictures/ss13.jpg" >
+        <div class="text">11/06/22</div>
+      </div>
+      <div class="mySlidess fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="pictures/ss14.jpg">
+        <div class="text">12/06/22</div>
+      </div>
+      <div class="mySlidess fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="pictures/ss15.jpg" >
+        <div class="text">13/06/22</div>
+      </div>
+      <a class="prev" onclick="plusSlidess(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlidess(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dotss" onclick="currentSlides(1)"></span> 
+      <span class="dotss" onclick="currentSlides(2)"></span> 
+      <span class="dotss" onclick="currentSlides(3)"></span> 
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlidess(slideIndex);
+      function plusSlidess(n) {
+        showSlidess(slideIndex += n);
+      }
+      function currentSlides(n) {
+        showSlidess(slideIndex = n);
+      }
+      function showSlidess(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlidess");
+        var dots = document.getElementsByClassName("dotss");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+<!--.......................................................^SECOND PICTURE............................................-->
+
+    <hr class="solid">
+<!--..........................................................^RULER..........................................-->
+    
+    <div class="cont">
+      <h1 style="text-align: center; color: white;">CONTACT US</h1>
+      <div class="row">
+        <div class="med">
+          <form action="https://www.w3schools.com/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+<!--........................................^FORM.................................................-->
+        <div class="med">
+          <p class="social">
+            Mobile;
+            <a href="0504024366" class="fa fa-mobile">0504024366</a>
+          </p>
+          <p class="social">
+            Whatsapp;
+            <a href="0551836808" class="fa fa-whatsapp">0551836808</a>
+          </p>
+          <p class="social">
+            Follow Us;
+            <a href="https://www.Facebook.com" class="fa fa-facebook">Facebook</a>
+            <a href="https://www.Twitter.com" class="fa fa-twitter">Twitter</a>
+            <a href="https://www.Instagram.com" class="fa fa-instagram">Instagram</a>
+          </p>
+        </div>
+<!--.........................................................^MEDIA HANDLES...........................................-->
+      </div>
+    </div>
+  </body>
+</html>
